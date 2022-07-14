@@ -22,6 +22,5 @@
     "express-ejs-layouts": "^2.5.1",
     "nodemon": "^2.0.19"
   },
-  "devDependencies": {},
   "description": ""
 }

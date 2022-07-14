@@ -1,9 +1,12 @@
 const express = require('express')
+//Express EJS Layouts
+var expressLayouts = require('express-ejs-layouts');
 const app = express()
 const port = 3000
 
 //Information using EJS
 app.set('view engine', 'ejs');
+app.use(expressLayouts);
 
 //Routes List
 app.get('/', (req, res) => {
