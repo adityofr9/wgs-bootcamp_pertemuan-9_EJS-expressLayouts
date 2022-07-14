@@ -6,6 +6,8 @@ const port = 3000
 
 //Information using EJS
 app.set('view engine', 'ejs');
+//Jika lokasi file layout berada di folder lain maka gunakan
+// app.set('layout', 'nama_folder/layout');
 app.use(expressLayouts);
 
 //Routes List
@@ -34,6 +36,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {nama: "Muhammad Adityo Fathur Rahim",
+    //layout: '', perintah ini sama seperti perintah app.set('layout', 'nama_folder/layout');
     title: 'Webserver EJS'})
 })
 
